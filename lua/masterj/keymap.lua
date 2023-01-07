@@ -4,7 +4,7 @@ vim.keymap.set("n","<leader>pv",vim.cmd.Ex)
 
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
+--local term_opts = { silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
@@ -29,8 +29,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Nvimtree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 
 vim.cmd "noremap <LEADER><CR> :nohlsearch<CR>"
