@@ -78,5 +78,6 @@ return require('packer').startup(function(use)
     }
     use ('goolord/alpha-nvim' )
     use("ggandor/leap.nvim") -- neovim movement
-
+    -- toggleterm
+    use("akinsho/toggleterm.nvim")
 end)
