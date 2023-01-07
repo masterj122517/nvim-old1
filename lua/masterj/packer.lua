@@ -76,11 +76,6 @@ return require('packer').startup(function(use)
         "windwp/nvim-autopairs",
         config = function() require("nvim-autopairs").setup {} end
     }
-    use 'akinsho/nvim-bufferline.lua'
-    use {
-        'svrana/neosolarized.nvim',
-        requires = { 'tjdevries/colorbuddy.nvim' }
-    }
-    use 'nvim-lualine/lualine.nvim' -- Statusline
+    use ('goolord/alpha-nvim' )
 
 end)
