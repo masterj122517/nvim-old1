@@ -35,10 +35,10 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 vim.cmd "noremap <LEADER><CR> :nohlsearch<CR>"
 
-vim.keymap.set('n','sl',':set splitright<CR>:vsplit<CR>',opts)
-vim.keymap.set('n','sh',':set nosplitright<CR>:vsplit<CR>',opts)
-vim.keymap.set('n','sk',':set nosplitbelow<CR>:split<CR>',opts)
-vim.keymap.set('n','sj',':set splitbelow<CR>:split<CR>',opts)
+vim.keymap.set('n', 'sl', ':set splitright<CR>:vsplit<CR>', opts)
+vim.keymap.set('n', 'sh', ':set nosplitright<CR>:vsplit<CR>', opts)
+vim.keymap.set('n', 'sk', ':set nosplitbelow<CR>:split<CR>', opts)
+vim.keymap.set('n', 'sj', ':set splitbelow<CR>:split<CR>', opts)
 --Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -78,10 +78,15 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 
 -- Do not yank with x
-vim.keymap.set('n','x','"_x')
+vim.keymap.set('n', 'x', '"_x')
 --increment/decrement
-vim.keymap.set('n','+','<C-a>')
-vim.keymap.set('n','-','<C-x>')
+vim.keymap.set('n', '+', '<C-a>')
+vim.keymap.set('n', '-', '<C-x>')
 
-vim.keymap.set('n','te',':tabedit<CR>',opts)
+vim.keymap.set('n', 'te', ':tabedit<CR>', opts)
 
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
