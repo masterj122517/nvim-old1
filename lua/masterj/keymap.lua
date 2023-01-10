@@ -92,3 +92,5 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.cmd[[cnoreabbrev sudowrite w suda://%]]
 vim.cmd[[cnoreabbrev sw w suda://%]]
+
+keymap("i", "<C-v>", "<cmd>Telescope registers<cr>", opts)
