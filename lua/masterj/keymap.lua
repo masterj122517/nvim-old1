@@ -35,8 +35,7 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 vim.cmd "noremap <LEADER><CR> :nohlsearch<CR>"
 
-vim.keymap.set('n', 'sl', ':set splitright<CR>:vsplit<CR>', opts)
-vim.keymap.set('n', 'sh', ':set nosplitright<CR>:vsplit<CR>', opts)
+vim.keymap.set('n', 'sl', ':set splitright<CR>:vsplit<CR>', opts) vim.keymap.set('n', 'sh', ':set nosplitright<CR>:vsplit<CR>', opts)
 vim.keymap.set('n', 'sk', ':set nosplitbelow<CR>:split<CR>', opts)
 vim.keymap.set('n', 'sj', ':set splitbelow<CR>:split<CR>', opts)
 --Resize with arrows
@@ -90,3 +89,5 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+

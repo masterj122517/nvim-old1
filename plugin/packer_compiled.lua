@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["eleline.vim"] = {
+    loaded = true,
+    path = "/home/masterj/.local/share/nvim/site/pack/packer/start/eleline.vim",
+    url = "https://github.com/theniceboy/eleline.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -149,6 +154,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-deus"] = {
+    loaded = true,
+    path = "/home/masterj/.local/share/nvim/site/pack/packer/start/nvim-deus",
+    url = "https://github.com/theniceboy/nvim-deus"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -191,12 +201,6 @@ _G.packer_plugins = {
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/masterj/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -218,6 +222,11 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/masterj/.local/share/nvim/site/pack/packer/opt/vim-fcitx2en",
     url = "https://github.com/yaocccc/vim-fcitx2en"
+  },
+  ["vim-xtabline"] = {
+    loaded = true,
+    path = "/home/masterj/.local/share/nvim/site/pack/packer/start/vim-xtabline",
+    url = "https://github.com/mg979/vim-xtabline"
   }
 }
 
@@ -230,10 +239,6 @@ time([[Config for nvim-surround]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
