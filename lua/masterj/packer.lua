@@ -86,5 +86,6 @@ return require('packer').startup(function(use)
 
     --tabline
     use 'mg979/vim-xtabline'
+    use 'lambdalisue/suda.vim'
 
 end)
