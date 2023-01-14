@@ -94,3 +94,5 @@ vim.cmd[[cnoreabbrev sudowrite w suda://%]]
 vim.cmd[[cnoreabbrev sw w suda://%]]
 
 keymap("i", "<C-v>", "<cmd>Telescope registers<cr>", opts)
+
+vim.keymap.set("n",";",":")
