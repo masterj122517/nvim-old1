@@ -97,5 +97,5 @@ keymap("i", "<C-v>", "<cmd>Telescope registers<cr>", opts)
 
 vim.keymap.set("n",";",":")
 
-vim.cmd[[map ,, :keepp /<++><CR>ca<]]
-vim.cmd[[imap ,, <esc>:keepp /<++><CR>ca<]]
+vim.cmd[[map ,f :keepp /<++><CR>ca<]]
+vim.cmd[[imap ,f <esc>:keepp /<++><CR>ca<]]
