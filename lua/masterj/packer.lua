@@ -12,7 +12,6 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-
     --use({
     --'rose-pine/neovim',
     --as = 'rose-pine',
@@ -53,7 +52,6 @@ return require('packer').startup(function(use)
     use({
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
-        event = "filetype = markdown"
     })
 
     use {
@@ -94,5 +92,9 @@ return require('packer').startup(function(use)
     use 'lewis6991/gitsigns.nvim'
     use 'dinhhuy258/git.nvim' -- For git blame & browse
 
+    --vim-table-mode
+    use {'dhruvasagar/vim-table-mode'}
+
+    use { "dstein64/vim-startuptime", cmd = "StartupTime" }
 
 end)
