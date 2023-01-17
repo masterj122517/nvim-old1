@@ -1,6 +1,10 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 vim.keymap.set("n","<leader>pv",vim.cmd.Ex)
+
+vim.keymap.set("n","Q",[[:q<CR>]])
+vim.keymap.set("n","<C-s>",[[:w<CR>]])
 
 local opts = { noremap = true, silent = true }
 
@@ -8,11 +12,6 @@ local opts = { noremap = true, silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
-
---Remap space as leader key
---keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
 
 -- Modes
 --   normal_mode = "n",
@@ -93,15 +92,16 @@ vim.keymap.set('n','tml',':+tabmove<CR>',opts)
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+--suda
 vim.cmd[[cnoreabbrev sudowrite w suda://%]]
 vim.cmd[[cnoreabbrev sw w suda://%]]
 
 keymap("i", "<C-v>", "<cmd>Telescope registers<cr>", opts)
 
 vim.keymap.set("n",";",":")
+vim.cmd[[noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>"_c4l]]
+--
+--Spelling Check with <space>sc
+vim.cmd[[noremap <LEADER>sc :set spell!<CR>]]
 
-vim.cmd[[map ,f :keepp /<++><CR>ca<]]
-vim.cmd[[imap ,f <esc>:keepp /<++><CR>ca<]]
