@@ -6,6 +6,7 @@ vim.keymap.set("n","<leader>pv",vim.cmd.Ex)
 vim.keymap.set("n","Q",[[:q<CR>]])
 vim.keymap.set("n","<C-s>",[[:w<CR>]])
 
+
 local opts = { noremap = true, silent = true }
 
 --local term_opts = { silent = true }
@@ -92,6 +93,8 @@ vim.keymap.set('n','tml',':+tabmove<CR>',opts)
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 --suda
 vim.cmd[[cnoreabbrev sudowrite w suda://%]]
