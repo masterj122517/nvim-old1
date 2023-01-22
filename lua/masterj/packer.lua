@@ -30,6 +30,15 @@ if not status_ok then
 	return
 end
 
+-- Have packer use a popup window
+packer.init({
+	display = {
+		open_fn = function()
+			return require("packer.util").float({ border = "rounded" })
+		end,
+	},
+})
+
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
