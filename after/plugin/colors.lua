@@ -1,5 +1,5 @@
 function ColorMyTheme(color)
-    color = color or "deus"
+    color = color or "onedark"
     vim.cmd.colorscheme(color)
 
     --background none color

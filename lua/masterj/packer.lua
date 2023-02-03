@@ -93,6 +93,8 @@ return require('packer').startup(function(use)
     use({
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
+        cmd = 'MarkdownPreview',
+        ft = 'markdown'
     })
 
     use {
@@ -134,8 +136,15 @@ return require('packer').startup(function(use)
     use 'dinhhuy258/git.nvim' -- For git blame & browse
 
     --vim-table-mode
-    use {'dhruvasagar/vim-table-mode'}
+    use {
+        'dhruvasagar/vim-table-mode',
+        run = ':TableModeToggle',
+        ft = 'markdown'
+    }
 
     use { "dstein64/vim-startuptime", cmd = "StartupTime" }
+
+    --colorscheme
+    use({ 'monsonjeremy/onedark.nvim', branch = 'treesitter' })
 
 end)
