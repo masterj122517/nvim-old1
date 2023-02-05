@@ -146,5 +146,6 @@ return require('packer').startup(function(use)
 
     --colorscheme
     use({ 'monsonjeremy/onedark.nvim', branch = 'treesitter' })
-
+    --vim-vistual-multi 
+    use('mg979/vim-visual-multi')
 end)

@@ -266,6 +266,11 @@ _G.packer_plugins = {
     path = "/home/masterj/.local/share/nvim/site/pack/packer/opt/vim-table-mode",
     url = "https://github.com/dhruvasagar/vim-table-mode"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/masterj/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
   ["vim-xtabline"] = {
     loaded = true,
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/vim-xtabline",
