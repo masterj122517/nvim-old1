@@ -148,4 +148,6 @@ return require('packer').startup(function(use)
     use({ 'monsonjeremy/onedark.nvim', branch = 'treesitter' })
     --vim-vistual-multi 
     use('mg979/vim-visual-multi')
+    --wildfire
+    use('gcmt/wildfire.vim')
 end)
