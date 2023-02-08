@@ -275,6 +275,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/masterj/.local/share/nvim/site/pack/packer/start/vim-xtabline",
     url = "https://github.com/mg979/vim-xtabline"
+  },
+  ["wildfire.vim"] = {
+    loaded = true,
+    path = "/home/masterj/.local/share/nvim/site/pack/packer/start/wildfire.vim",
+    url = "https://github.com/gcmt/wildfire.vim"
   }
 }
 
